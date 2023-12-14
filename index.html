@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./source/css/tailwind.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  Perfume
+<body class="min-h-screen bg-Cream font-Montserrat text-paragraph laptop: flex justify-center items-center">
+  <main class="bg-white rounded-xl overflow-hidden md:flex w-600">
+    <h1 class="sr-only">Product preview card component</h1>
+    <picture class="md:w-1/2">
+      <source media="(min-width: 768px)" srcset="images/image-product-desktop.jpg">
+      <img src="images/image-product-mobile.jpg" 
+      alt="Gabrielle Essence perfume laying on the ground surrounded by branches of leaves">
+    </picture>
 
-  Gabrielle Essence Eau De Parfum
+    <section class="md:w-1/2 md:p-8">
+      <p class="category uppercase mb-3 text-xs">Perfume</p>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+      <h2 class="font-Fraunces text-3xl mb-4 font-bold md:text-heading">Gabrielle Essence Eau De Parfum</h2>
 
-  $149.99
-  $169.99
+      <p class="mb-5 md:mb-8">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</p>
 
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <span class="flex flex-row justify-start gap-5">
+        <p class="font-Fraunces text-Dark-cyan text-3xl">$149.99</p>
+        <p class="line-through flex items-center">$169.99</p>
+      </span>
+
+      <button type="submit" 
+      class="bg-Dark-cyan w-full mt-5 h-12 rounded-lg text-white flex justify-center 
+      text-center items-center font-bold hover:bg-hover-cyan md:mt-8">
+      <img src="images/icon-cart.svg" alt="a cart icon"
+      class="mr-3">Add to Cart</button>
+    </section>
+  </main>
 </body>
+
 </html>
