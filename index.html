@@ -12,21 +12,21 @@
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 
-<body class="min-h-screen bg-Cream font-Montserrat text-paragraph laptop: flex justify-center items-center">
-  <main class="bg-white rounded-xl overflow-hidden md:flex w-600">
+<body class="min-h-screen bg-Cream font-Montserrat flex justify-center items-center">
+  <main class="bg-white rounded-xl overflow-hidden sm:flex sm:w-600">
     <h1 class="sr-only">Product preview card component</h1>
-    <picture class="md:w-1/2">
-      <source media="(min-width: 768px)" srcset="images/image-product-desktop.jpg">
+    <picture class="sm:w-1/2">
+      <source media="(min-width: 640px)" srcset="images/image-product-desktop.jpg">
       <img src="images/image-product-mobile.jpg" 
       alt="Gabrielle Essence perfume laying on the ground surrounded by branches of leaves">
     </picture>
 
-    <section class="md:w-1/2 md:p-8">
+    <section class="sm:w-1/2 sm:p-8">
       <p class="category uppercase mb-3 text-xs">Perfume</p>
 
-      <h2 class="font-Fraunces text-3xl mb-4 font-bold md:text-heading">Gabrielle Essence Eau De Parfum</h2>
+      <h2 class="font-Fraunces text-3xl mb-4 font-bold sm:text-heading">Gabrielle Essence Eau De Parfum</h2>
 
-      <p class="mb-5 md:mb-8">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+      <p class="mb-5 sm:mb-8">A floral, solar and voluptuous interpretation composed by Olivier Polge,
         Perfumer-Creator for the House of CHANEL.</p>
 
       <div class="flex flex-row justify-start gap-5">
@@ -36,7 +36,7 @@
 
       <button type="submit" 
       class="bg-Dark-cyan w-full mt-5 h-12 rounded-lg text-white flex justify-center 
-      text-center items-center font-bold hover:bg-hover-cyan md:mt-8">
+      text-center items-center font-bold hover:bg-hover-cyan sm:mt-8">
       <img src="images/icon-cart.svg" alt="a cart icon"
       class="mr-3">Add to Cart</button>
     </section>

@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+    body {
+        font-size: 0.875rem;
+    }
+}
+
+@layer components {
     main {
         margin: 1.75rem 1rem;
     }
@@ -18,12 +24,4 @@
     .category {
         letter-spacing: 5px;
     }
-}
-
-@layer components {
-    
-}
-
-@layer utilities {
-
 }

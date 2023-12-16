@@ -18,7 +18,6 @@ module.exports = {
       },
 
       fontSize: {
-        'paragraph': '0.875rem',
         'heading': '2.125rem',
       },
 
